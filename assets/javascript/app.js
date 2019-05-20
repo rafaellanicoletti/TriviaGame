@@ -86,8 +86,21 @@ function showQuestion(){
 start.addEventListener("click", startQuiz);
 
 
+// checkAnswer
 
-// create choices
-// create timer 
-// create submit button
-// create page with results. 
+function checkAnswer(answer) {
+    if (answer === q.correct) {
+        // answer is correct
+        score++;
+    } 
+
+    count = 0;
+    if (runningQuestion < lastQuestion) {
+        runningQuestion++;
+        showQuestion();
+    } else {
+        // end the quiz 
+        clearInterval(TIMER);
+        scoreRender();
+    }
+}
