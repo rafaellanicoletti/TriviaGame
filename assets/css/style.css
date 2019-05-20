@@ -1,0 +1,11 @@
+body{
+    background: url("http://www.luxury-marionette.com/wp-content/uploads/2018/05/Screen-Shot-2018-05-10-at-20.54.17.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+#jumbotron {
+    background-color: aqua;
+    font-family: fantasy;
+}

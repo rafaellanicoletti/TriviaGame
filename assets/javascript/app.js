@@ -22,7 +22,7 @@ var runningQuestion = 0;
 
 
 // start function 
-var start = function();
+// var start = function();
 
 
 // create questions
@@ -85,6 +85,19 @@ function showQuestion(){
 
 start.addEventListener("click", startQuiz);
 
+// start quiz
+function start() {
+    // start.style.display = "none";
+    renderQuestion();
+    // quiz.style.display = "block";
+    // renderProgress();
+    // renderCounter();
+    TIMER = setInterval(renderCounter, 1000); // 1000ms = 1s
+}
+
+
+
+
 
 // checkAnswer
 
@@ -104,3 +117,4 @@ function checkAnswer(answer) {
         scoreRender();
     }
 }
+
