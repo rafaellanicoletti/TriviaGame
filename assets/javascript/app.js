@@ -37,7 +37,13 @@ var questions = [
     choiceD: "Wrong",
     correct: "B"
 
-      
+  },{
+    question: "Who is the best F1 driver of all time? (Ayrton Senna)",
+    choiceA: "Correct",
+    choiceB: "Wrong",
+    choiceC: "Wrong",
+    choiceD: "Wrong",
+    correct: "A"
   }
 
 
