@@ -44,7 +44,14 @@ var questions = [
     choiceC: "Wrong",
     choiceD: "Wrong",
     correct: "A"
-  }
+  }, { 
+    question: "Who was the best driver in 2018? (Lewis HAmilton)",
+    choiceA: "Wrong",
+    choiceB: "Wrong",
+    choiceC: "Wrong",
+    choiceD: "Correct",
+    correct: "D"
+  },
 
 
 
