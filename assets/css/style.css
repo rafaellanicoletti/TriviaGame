@@ -5,7 +5,9 @@ body{
     
 }
 
-#jumbotron {
-    background-color: aqua;
-    font-family: fantasy;
+.jumbotron {
+    background: transparent;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+   
 }
