@@ -1,10 +1,24 @@
 
-var question = ;
-var choiceA = ;
-var choiceB = : 
-var choiceC = ;
-var choiceD = ; 
+// Create variables
 
+var count = 0; 
+// 10s
+var questionTime = 10; 
+var timer;
+var score = 0;
+
+// const lastQuestion = questions.length - 1;
+// let runningQuestion = 0;
+// let count = 0;
+// const questionTime = 10; // 10s
+// const gaugeWidth = 150; // 150px
+// const gaugeUnit = gaugeWidth / questionTime;
+// let TIMER;
+// let score = 0;
+
+
+
+// start function 
 var start = function();
 
 
@@ -51,17 +65,11 @@ var questions = [
     choiceC: "Wrong",
     choiceD: "Correct",
     correct: "D"
-  },
+    }
+];
 
 
 
-
-
-
-
-
-    ``   
-]
 
 // create choices
 // create timer 
