@@ -13,21 +13,30 @@ var start = function();
 var questions = [
   {
     question : "When was the first Grand Prix of Monaco? (1929)",
-    imgSrc : something.png,
     choiceA : "Correct", 
     choiceB : "Wrong",
     choiceC : "Wrong",
     choiceD : "Wrong",
     correct : "A"
+
   }, {
-    question : "How many Grand Prix races are there in a season? (21)"
-    imgSrc : something.png,
+
+    question : "How many Grand Prix races are there in a season? (21)",
     choiceA : "Wrong",
     choiceB : "Wrong",
     choiceC : "Correct",
     choiceD : "Wrong",
     correct : "C"
+
   }, {
+
+    question: "Who has won the F1 the most times? (Michael Schumacher)",
+    choiceA: "Wrong",
+    choiceB: "Correct",
+    choiceC: "Wrong",
+    choiceD: "Wrong",
+    correct: "B"
+
       
   }
 
