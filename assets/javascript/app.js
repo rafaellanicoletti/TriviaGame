@@ -6,6 +6,9 @@ var count = 0;
 var questionTime = 10; 
 var timer;
 var score = 0;
+var runningQuestion = 0;
+
+
 
 // const lastQuestion = questions.length - 1;
 // let runningQuestion = 0;
@@ -68,6 +71,19 @@ var questions = [
     }
 ];
 
+// Show question
+
+function showQuestion(){
+    var q = questions[runningQuestion];
+
+    question.innerHtml = "<p>" + q.question + "</p>";
+    choiceA.innerHtml = q.choiceA;
+    choiceB.innerHtml = q.choiceB;
+    choiceC.innerHtml = q.choiceC;
+    choiceD.innerHtml = q.choiceD;
+}
+
+start.addEventListener("click", startQuiz);
 
 
 
