@@ -20,6 +20,7 @@ body{
     font-size: 17pt;
     padding: 30px;
     margin-bottom: 100px;
+    border-radius: 25px;
 
 }
 
@@ -30,4 +31,12 @@ body{
 
 .container1, .container2, .container3, .container4, .container5{
     padding: 20px;
+}
+
+#submitBtn {
+    margin-left: 40%;
+    margin-right: 40%;
+    width: 20%;
+    padding: 20px;
+    margin-top: 30px;
 }
