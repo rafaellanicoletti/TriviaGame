@@ -25,8 +25,9 @@ body{
 
 }
 
-#A, #B, #C, #D { 
+.btn { 
     border-color: black;
+    margin: 5px;
 
 }
 
