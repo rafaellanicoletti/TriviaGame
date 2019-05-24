@@ -15,7 +15,7 @@
         correctAnswer: "Michael Schumacher"
     }, {
         question: "Who is the best F1 driver of all time?",
-        choices: ["Niki Lauda", "Ayrton Senna", "Lewis Hamilton", "Ayrton Senna"],
+        choices: ["Niki Lauda", "Ayrton Senna", "Lewis Hamilton", "Sebastian Vettel"],
         correctAnswer: "Ayrton Senna"
     }, {
         question: "Who was the best driver in 2018?",
@@ -24,9 +24,9 @@
     }
 ];
 
+
 // set variables
 score = 0;
-btns = $("<button type='button' class='btn btn-outline-*'>")
 
 
 //Show questions
@@ -41,7 +41,7 @@ function addQuestions(){
         div.append(p)
 
         for(var j = 0;j<questions[i].choices.length; j++){
-            var btns = $("<button type='button' class='btn btn-outline-*'>")
+            var btns = $("<button type='button' id=choiceBtn class='btn btn-outline-* answer-buttons'>")
             btns.text(questions[i].choices[j])
             div.append(btns)
         }
@@ -49,10 +49,11 @@ function addQuestions(){
         $("#question-wrapper").append(div)
     }
 
+    $(".answer-buttons").click(function(){
+        
+    })
+
 }
-
-$("<button type='button' class='btn btn-outline-*'>").click(correctAnswers)
-
 
 
 // // when button start clicked run the timer
@@ -69,7 +70,14 @@ function startRound(){
 
 addQuestions()
 
+//get user's answers *
+// for (var p = 0; p < questions[p].correctAnswer.length; p++) {
+//     $('#answer-buttons' + p).on('click', { 'idx': p }, function (e) {
+//         console.log('you clicked ' + e.data.idx);
+//     });
+// }
 
+//correct answer/incorrect
 function correctAnswers(questions){
 	for(var z=0; z<questions.length; z++){
 		// find selected answer
@@ -82,25 +90,16 @@ function correctAnswers(questions){
     }
 }
 
+
+
 // on submit, show results
-$("#btn btn-dark").click(submit)
+$("#submitBtn").click(submit)
 function submit(){
-    alert("Your score is: " + score + "out of 5!");
+    // (correctAnswers)
+    alert("Your score is: " + score + " out of 5!");
+    
 }
 
 
 
-
-
-
-
-
-
-// answer button correct/incorrect
-// function isCorrect() {
-//     // if button (whatever question).correct answer
-//     if ("btns")click(questions[0].correctAnswer);
-//     // score goes up. 
-//     score++;
-// }
 
